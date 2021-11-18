@@ -6,3 +6,6 @@ package-lock.json
 
 # File Vscode
 .vscode
+
+# File Figma
+GoTrip.fig
