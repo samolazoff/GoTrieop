@@ -1,7 +1,49 @@
+@import reset
+@import var
+@import mixin
+body
+    background-color: #E5E5E5
+    font-family: 'Poppins', sans-serif
 section
     width: 100%
 .cont
-    width: 1440px
+    max-width: 1440px
     margin: 0 auto
-@import reset
+    padding: 0 100px
+.c-flex
+    display: flex
+    flex-direction: column
+.r-flex
+    display: flex
+    flex-direction: row
+.logo
+    margin: 50px 0
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 30px
+    color: $white
+.btn
+    border-radius: 10%
+    padding: 10px 20px
+    margin: 0 12.5px
+    background-color: inherit
+.btn_orange
+    background-color: $orange
+.p-nav
+    @include flexPos($jc:space-between)
+    .p-nav-link
+        @include typog(normal,500,15px,22px,$white)
+        li
+            padding: 5px
+            margin: 0 45px
+            border: 2px solid rgba(0,0,0, 0) 
+        li:hover
+            border-bottom: 2px solid
+            color: $gray
+    .btn-login
+        .btn
+            border-radius: 100px
+            @include typog(normal,500,15px,22px,$white)
 @import titleBlock
+
